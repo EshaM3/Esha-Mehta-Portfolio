@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esha Mehta - Game Developer & Web Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="javascript:void(0);" onclick="scrollToTop()" class="logo"
+        >Esha Mehta</a
+      >
+
+      <!-- Hamburger menu button for mobile -->
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <!-- Mobile menu overlay -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-content">
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-links">
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="smoothScroll('#home'); closeMobileMenu()"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="smoothScroll('#projects'); closeMobileMenu()"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="smoothScroll('#about'); closeMobileMenu()"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="smoothScroll('#resume'); closeMobileMenu()"
+                  >Resume</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="smoothScroll('#contact'); closeMobileMenu()"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mobile-social-icons">
+            <a
+              href="https://www.linkedin.com/in/esha-m-/"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="assets/InBug-Black.png" alt="Linkedin logo button" />
+            </a>
+            <a
+              href="https://thebirdbard.itch.io/"
+              target="_blank"
+              class="social-icon"
+            >
+              <img
+                src="assets/itchio-logo-textless-black.png"
+                alt="Itch.io logo button"
+              />
+            </a>
+            <a
+              href="https://github.com/EshaM3"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="assets/github-mark.png" alt="GitHub logo button" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regular desktop navigation -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li>
+            <a href="javascript:void(0);" onclick="smoothScroll('#home')"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="smoothScroll('#projects')"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="smoothScroll('#about')"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="smoothScroll('#resume')"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="smoothScroll('#contact')"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social-icons desktop-only">
+        <a
+          href="https://www.linkedin.com/in/esha-m-/"
+          target="_blank"
+          class="social-icon"
+        >
+          <img src="assets/InBug-Black.png" alt="Linkedin logo button" />
+        </a>
+        <a
+          href="https://thebirdbard.itch.io/"
+          target="_blank"
+          class="social-icon"
+        >
+          <img
+            src="assets/itchio-logo-textless-black.png"
+            alt="Itch.io logo button"
+          />
+        </a>
+        <a href="https://github.com/EshaM3" target="_blank" class="social-icon">
+          <img src="assets/github-mark.png" alt="GitHub logo button" />
+        </a>
+      </div>
+    </header>
+
+    <section class="hero-section" id="home">
+      <div class="project-slider">
+        <div class="slide active">
+          <img
+            src="project_assets/t-ut/TuneUpTonicPic1.PNG"
+            alt="Tune-Up Tonic in-game screenshot"
+            class="slide-image"
+          />
+          <div class="slide-content">
+            <h2>Tune-Up Tonic</h2>
+            <p>
+              A Unity puzzle game which takes place inside various out-of-tune
+              music boxes. Available on Mac and Windows. Will soon be available
+              on the Tilt Five.
+            </p>
+            <a href="javascript:void(0);" class="view-project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="project_assets/memory_m-c/MMC0.PNG"
+            alt="Memory Mission Control in-site screenshot"
+            class="slide-image"
+          />
+          <div class="slide-content">
+            <h2>Memory Mission Control</h2>
+            <p>
+              A quiz platform, developed using Phaser.io, that allows students
+              to assess themselves on any subject with customizable
+              question-and-answer pairs.
+            </p>
+            <a href="javascript:void(0);" class="view-project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="project_assets/temikki/TemikkiAR2_crop.jpg"
+            alt="Temikki AR-view screenshot"
+            class="slide-image"
+          />
+          <div class="slide-content">
+            <h2>Temikki</h2>
+            <p>
+              An Android AR application made to support the emotional well-being
+              of children who have long hospital stays.
+            </p>
+            <a href="javascript:void(0);" class="view-project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="project_assets/sgaro/SGARO_main.PNG"
+            alt="Stained Glass AR-view screenshot"
+            class="slide-image"
+          />
+          <div class="slide-content">
+            <h2>Stained Glass AR Opera</h2>
+            <p>(Details will be added soon).</p>
+            <!-- <a href="javascript:void(0);" class="view-project-link"
+              >View Project</a
+            > -->
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="project_assets/aa/AA_zoomout.PNG"
+            alt="Asthma Academy VR-view screenshot"
+            class="slide-image"
+          />
+          <div class="slide-content">
+            <h2>Asthma Academy</h2>
+            <p>
+              A VR app designed to educate caregivers on how to manage a child’s
+              asthma attack.
+            </p>
+            <a href="javascript:void(0);" class="view-project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="project_assets/family_ties/FamilyTies0.PNG"
+            alt="Family Ties in-game screenshot"
+            class="slide-image"
+          />
+          <div class="slide-content">
+            <h2>Family Ties</h2>
+            <p>(Details will be added soon).</p>
+            <!-- <a href="javascript:void(0);" class="view-project-link"
+              >View Project</a
+            > -->
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="project_assets/v_piano/VirtualPiano0.PNG"
+            alt="Virtual Piano in-site screenshot"
+            class="slide-image"
+          />
+          <div class="slide-content">
+            <h2>Your Virtual Piano</h2>
+            <p>(Details will be added soon).</p>
+            <!-- <a href="javascript:void(0);" class="view-project-link"
+              >View Project</a
+            > -->
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="project_assets/mcflower/MCFlowerQuiz0.PNG"
+            alt="Minecraft Flower Quiz in-site screenshot"
+            class="slide-image"
+          />
+          <div class="slide-content">
+            <h2>Minecraft Flower Quiz</h2>
+            <p>
+              An online personality quiz to determine which of 19 Minecraft
+              flowers the player is most like.
+            </p>
+            <a href="javascript:void(0);" class="view-project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="slide-nav">
+        <!-- Add arrows for mobile navigation -->
+        <div class="slide-arrow prev-arrow">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <!-- Text links will be added dynamically -->
+        <div class="slide-arrow next-arrow">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <!-- <img
+        src="assets/parallax-bg1.jpg"
+        alt="Parallax Background"
+        class="parallax-bg"
+      /> -->
+      <div class="section-content">
+        <h2 class="section-title">All Projects</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/t-ut/TuneUpTonicPic1.PNG"
+                alt="Tune-Up Tonic in-game screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Tune-Up Tonic</h3>
+              <p>
+                A Unity puzzle game which takes place inside various out-of-tune
+                music boxes.
+              </p>
+              <button class="view-details" data-project="1">
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/memory_m-c/MMC0.PNG"
+                alt="Memory Mission Control in-game screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Memory Mission Control</h3>
+              <p>An online quiz game made for customizable self-assessment.</p>
+              <button class="view-details" data-project="2">
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/temikki/TemikkiAR2_crop.jpg"
+                alt="Temikki AR application screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Temikki</h3>
+              <p>
+                An Android AR application made to support the emotional
+                well-being of children who have long hospital stays.
+              </p>
+              <button class="view-details" data-project="3">
+                View Details
+              </button>
+            </div>
+          </div>
+          <!-- <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/sgaro/SGARO_main.PNG"
+                alt="Stained Glass AR Opera screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Stained Glass AR Opera</h3>
+              <p>
+                An augmented reality experience bringing classical opera to life
+                through innovative AR technology.
+              </p>
+              <button class="view-details" data-project="4">
+                View Details
+              </button>
+            </div>
+          </div> -->
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/aa/AsthmaAcademy.PNG"
+                alt="Asthma Academy screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Asthma Academy</h3>
+              <p>
+                A VR app designed to educate caregivers on how to manage a
+                child’s asthma attack.
+              </p>
+              <button class="view-details" data-project="5">
+                View Details
+              </button>
+            </div>
+          </div>
+          <!-- <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/family_ties/FamilyTies0.PNG"
+                alt="Family Ties screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Family Ties</h3>
+              <p>
+                An interactive narrative experience exploring family
+                relationships and connections across generations.
+              </p>
+              <button class="view-details" data-project="6">
+                View Details
+              </button>
+            </div>
+          </div> -->
+          <!-- <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/v_piano/VirtualPiano0.PNG"
+                alt="Your Virtual Piano screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Your Virtual Piano</h3>
+              <p>
+                An interactive web application that lets users play and learn
+                piano through an intuitive digital interface.
+              </p>
+              <button class="view-details" data-project="7">
+                View Details
+              </button>
+            </div>
+          </div> -->
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/mcflower/MCFlowerQuiz0.PNG"
+                alt="Minecraft Flower Quiz screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Minecraft Flower Quiz</h3>
+              <p>
+                An online personality quiz to determine which of 19 Minecraft
+                flowers the player is most like.
+              </p>
+              <button class="view-details" data-project="8">
+                View Details
+              </button>
+            </div>
+          </div>
+          <!-- 
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/roome/RooME_Screenshot.PNG"
+                alt="RooME app picture"
+              />
+            </div>
+            <div class="card-content">
+              <h3>RooME</h3>
+              <p>
+                A placeholder description for a future project to be added
+                later.
+              </p>
+              <button class="view-details" data-project="9">
+                View Details
+              </button>
+            </div>
+          </div> -->
+
+          <!-- <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/rgc/RGC0.PNG"
+                alt="Rhythm Game Arcade Controller game picture"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Rhythm Game Arcade Controller</h3>
+              <p>
+                A placeholder description for a future project to be added
+                later.
+              </p>
+              <button class="view-details" data-project="10">
+                View Details
+              </button>
+            </div>
+          </div> -->
+          <!-- 
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/dnd/DnDSB0.PNG"
+                alt="DnD Soundboard picture"
+              />
+            </div>
+            <div class="card-content">
+              <h3>DnD Soundboard</h3>
+              <p>
+                A placeholder description for a future project to be added
+                later.
+              </p>
+              <button class="view-details" data-project="11">
+                View Details
+              </button>
+            </div>
+          </div> -->
+          <!-- 
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/sushipomo/SushiPomodoro0.PNG"
+                alt="Stop-Go Conveyor Belt picture"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Stop-Go Conveyor Belt</h3>
+              <p>
+                A placeholder description for a future project to be added
+                later.
+              </p>
+              <button class="view-details" data-project="12">
+                View Details
+              </button>
+            </div>
+          </div> -->
+          <!-- 
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/v_mannequin/VirtualMannequin0.PNG"
+                alt="Virtual Mannequin picture"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Virtual Mannequin</h3>
+              <p>
+                A placeholder description for a future project to be added
+                later.
+              </p>
+              <button class="view-details" data-project="13">
+                View Details
+              </button>
+            </div>
+          </div> -->
+
+          <!-- <div class="project-card">
+            <div class="card-image">
+              <img
+                src="project_assets/tipping/TippingScreen0.PNG"
+                alt="Tipping Screen picture"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Tipping Screen</h3>
+              <p>
+                A placeholder description for a future project to be added
+                later.
+              </p>
+              <button class="view-details" data-project="14">
+                View Details
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <!-- <img
+        src="assets/parallax-bg2.jpg"
+        alt="Parallax Background"
+        class="parallax-bg"
+      /> -->
+      <div class="section-content">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/about_EM.PNG" alt="Profile Image" />
+          </div>
+          <div class="about-text">
+            <p>
+              Hello there! I'm a passionate game developer and web designer
+              dedicated to crafting interactive, meaningful, and immersive
+              digital experiences. My work centers on blending creativity with
+              technology to deliver engaging user experiences across various
+              platforms, with a particular focus on games and websites.
+            </p>
+            <p>
+              I hold a Bachelor of Science degree in Computer Science from the
+              University of Miami, complemented by minors in Mathematics and
+              Interactive Media. Through both my academic journey and my roles
+              as a student developer in cross-functional teams and a Teaching
+              Assistant for two Computer Science courses, I've honed both my
+              technical expertise and collaborative skills.
+            </p>
+            <p>
+              When I'm not working, I love expressing myself through
+              music—whether it's belting out dramatic songs or playing the
+              piano. I also love exploring narrative-rich games and new crochet
+              projects.
+            </p>
+            <p>
+              Feel free to explore my portfolio to see how I merge creativity
+              with technology to build meaningful digital experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section" id="resume">
+      <div class="section-content">
+        <h2 class="section-title">My Resume</h2>
+        <div class="resume-viewer">
+          <iframe
+            src="assets/Esha_Mehta_Resume_6_2025.pdf"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            loading="lazy"
+            title="Resume PDF"
+          ></iframe>
+        </div>
+        <a
+          href="assets/Esha_Mehta_Resume_6_2025.pdf"
+          download
+          class="resume-download-btn"
+        >
+          Download Resume
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-content">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <div class="form-container">
+            <form
+              action="https://formspree.io/f/xanoodgb"
+              method="POST"
+              class="contact-form"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject of your message"
+                />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="_gotcha" class="honeypot" />
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-modal">
+      <span class="close-modal"><i class="fas fa-times"></i></span>
+      <div class="modal-content">
+        <!-- Project details will be loaded dynamically -->
+      </div>
+    </div>
+
+    <div id="audio-player" class="audio-player">
+      <i id="toggleMusic" class="fas fa-volume-mute"></i>
+      <span>Background Music</span>
+      <audio id="bgMusic" loop>
+        <source
+          src="assets/jazz-lounge-elevator-music-322314.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+
+    <script>
+      // Initialize GSAP
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Functions to handle smooth scrolling without changing URL hash
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+        // Clear URL hash if present
+        if (window.location.hash) {
+          history.replaceState(null, null, " ");
+        }
+      }
+
+      function smoothScroll(target) {
+        const targetElement = document.querySelector(target);
+        if (targetElement) {
+          const headerHeight = document.querySelector(".header").offsetHeight;
+          window.scrollTo({
+            top: targetElement.offsetTop - headerHeight - 20,
+            behavior: "smooth",
+          });
+        }
+      }
+
+      // On page load, handle initial scroll position
+      window.addEventListener("load", function () {
+        // Clear the hash fragment by default to prevent auto-scrolling on reload
+        if (window.location.hash && window.location.hash !== "#home") {
+          smoothScroll(window.location.hash);
+        } else {
+          // Explicitly scroll to top if no hash or hash is #home
+          window.scrollTo(0, 0);
+          // Clear the URL hash silently
+          if (history.pushState) {
+            history.pushState(null, null, window.location.pathname);
+          } else {
+            location.hash = "";
+          }
+        }
+      });
+
+      // Project slider functionality
+      const slides = document.querySelectorAll(".slide");
+      const slideNav = document.querySelector(".slide-nav");
+      let currentSlide = 0;
+
+      // Add an event listener for when the DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Check if URL has a hash
+        if (window.location.hash) {
+          // Get the element with that ID
+          const targetElement = document.querySelector(window.location.hash);
+          if (targetElement) {
+            // Add a slight delay to ensure everything is loaded
+            setTimeout(() => {
+              // Calculate header height
+              const headerHeight =
+                document.querySelector(".header").offsetHeight;
+              // Scroll to the element with offset for the fixed header
+              window.scrollTo({
+                top: targetElement.offsetTop - headerHeight - 20, // Additional 20px buffer
+                behavior: "smooth",
+              });
+            }, 100);
+          }
+        } else {
+          // If no hash, scroll to top
+          window.scrollTo(0, 0);
+        }
+      });
+
+      // Enhanced fade-in animations for sections - Modified to only trigger on scroll down
+      const sections = gsap.utils.toArray(".section");
+      sections.forEach((section, i) => {
+        // Create fade-in timeline for each section
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            toggleActions: "play none none none", // Changed from "play none none reverse" - don't reverse on scroll up
+            markers: false,
+            once: true, // Only trigger the animation once
+          },
+        });
+
+        // Fade in the section with staggered children
+        tl.from(section, {
+          opacity: 0,
+          y: 100,
+          duration: 1,
+          ease: "power3.out",
+        }).from(
+          section.children,
+          {
+            opacity: 0,
+            y: 50,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power2.out",
+          },
+          "-=0.5"
+        );
+
+        // Add parallax effect to background images - Keep this separate
+        const parallaxBg = section.querySelector(".parallax-bg");
+        if (parallaxBg) {
+          gsap.to(parallaxBg, {
+            y: "30%",
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: 1,
+            },
+          });
+        }
+      });
+
+      // Hero section special animation - Keep this unchanged
+      gsap.from(".hero-section", {
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.out",
+      });
+
+      // Project modal functionality
+      const modal = document.querySelector(".project-modal");
+      const closeModal = document.querySelector(".close-modal");
+      const viewDetailsButtons = document.querySelectorAll(".view-details");
+
+      // Function to close the modal
+      function closeProjectModal() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Function to open the modal with project details
+      function openProjectModal(projectId) {
+        // Get project data from our projects database
+        const projectData = projectsDatabase[projectId] || {
+          title: `Project ${projectId}`,
+          content: `<p>Project description placeholder. This project hasn't been fully documented yet.</p>`,
+        };
+
+        // Load project content based on projectId
+        const modalContent = document.querySelector(".modal-content");
+        modalContent.innerHTML = `
+          <div class="modal-body">
+            <h2>${projectData.title}</h2>
+            <div class="project-content">
+              ${projectData.content}
+            </div>
+          </div>
+        `;
+
+        // Show modal with animation
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+
+        // Animate modal content
+        gsap.from(".modal-content", {
+          y: 100,
+          opacity: 0,
+          duration: 0.6,
+          ease: "power3.out",
+        });
+      }
+
+      // Modal open handler for view details buttons
+      viewDetailsButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const projectId = button.dataset.project;
+          openProjectModal(projectId);
+        });
+      });
+
+      // Close modal button handler
+      closeModal.addEventListener("click", closeProjectModal);
+
+      // Close modal when clicking outside
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          closeProjectModal();
+        }
+      });
+
+      // Add keyboard support to close modal with Escape key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && modal.style.display === "block") {
+          closeProjectModal();
+        }
+      });
+
+      // Add functionality to hero slider "View Project" links
+      const viewProjectLinks = document.querySelectorAll(".view-project-link");
+      viewProjectLinks.forEach((link, index) => {
+        link.addEventListener("click", () => {
+          // Scroll to the projects section
+          smoothScroll("#projects");
+
+          // Find the corresponding project card
+          setTimeout(() => {
+            // Get all project cards
+            const projectCards = document.querySelectorAll(".project-card");
+
+            // Make sure we don't exceed the number of available project cards
+            if (index < projectCards.length) {
+              // Get the position of the corresponding project card
+              const targetCard = projectCards[index];
+
+              // Scroll to the specific card with an offset for the header
+              const headerHeight =
+                document.querySelector(".header").offsetHeight;
+              const cardPosition =
+                targetCard.getBoundingClientRect().top +
+                window.pageYOffset -
+                headerHeight -
+                20;
+
+              // Highlight the card briefly
+              targetCard.classList.add("highlight-card");
+              setTimeout(() => {
+                targetCard.classList.remove("highlight-card");
+              }, 2000);
+
+              // Scroll to the card
+              window.scrollTo({
+                top: cardPosition,
+                behavior: "smooth",
+              });
+            }
+          }, 500); // Small delay to allow the projects section to come into view first
+        });
+      });
+
+      // Remove old project links event handler
+      const projectLinks = document.querySelectorAll(".project-link");
+      projectLinks.forEach((link) => {
+        // Remove existing event listeners and update class for styling purposes
+        const oldLink = link;
+        const newBtn = document.createElement("button");
+        newBtn.className = "view-details";
+        newBtn.dataset.project = oldLink.dataset.project;
+        newBtn.textContent = "View Details";
+        newBtn.addEventListener("click", () => {
+          openProjectModal(oldLink.dataset.project);
+        });
+        oldLink.parentNode.replaceChild(newBtn, oldLink);
+      });
+
+      // Generate text links instead of thumbnails
+      slides.forEach((slide, index) => {
+        const title = slide.querySelector("h2").textContent;
+        const link = document.createElement("a");
+        link.className = "slide-link";
+        link.textContent = title;
+        link.href = "#";
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          goToSlide(index);
+        });
+        slideNav.appendChild(link);
+      });
+
+      function goToSlide(index) {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = index;
+        slides[currentSlide].classList.add("active");
+
+        // Update active state on links
+        const links = document.querySelectorAll(".slide-link");
+        links.forEach((link, i) => {
+          if (i === index) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      }
+
+      // Auto advance slides
+      setInterval(() => {
+        goToSlide((currentSlide + 1) % slides.length);
+      }, 8000);
+
+      // Music player
+      const audioPlayer = document.getElementById("audio-player");
+      const toggleIcon = document.getElementById("toggleMusic");
+      const bgMusic = document.getElementById("bgMusic");
+      let isMusicPlaying = false;
+
+      audioPlayer.addEventListener("click", () => {
+        if (isMusicPlaying) {
+          bgMusic.pause();
+          toggleIcon.className = "fas fa-volume-mute";
+        } else {
+          bgMusic.play().catch((error) => {
+            if (error.name === "AbortError") {
+              console.log("Music paused.");
+            }
+          });
+          console.log("Music is playing.");
+          toggleIcon.className = "fas fa-volume-up";
+        }
+        isMusicPlaying = !isMusicPlaying;
+      });
+
+      // Mobile menu functionality
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      // Function to toggle mobile menu
+      function toggleMobileMenu() {
+        hamburgerMenu.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+        document.body.classList.toggle("menu-open");
+      }
+
+      // Function to close mobile menu
+      function closeMobileMenu() {
+        hamburgerMenu.classList.remove("active");
+        mobileMenu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+      }
+
+      // Event listener for hamburger menu
+      hamburgerMenu.addEventListener("click", toggleMobileMenu);
+
+      // Close mobile menu on window resize if screen becomes large
+      window.addEventListener("resize", function () {
+        if (
+          window.innerWidth > 768 &&
+          mobileMenu.classList.contains("active")
+        ) {
+          closeMobileMenu();
+        }
+      });
+
+      // Add a resize handler to adjust layout for different screen sizes
+      function handleResponsiveLayout() {
+        // Check if it's a mobile device based on width
+        const isMobile = window.innerWidth <= 768;
+
+        // Adjust project cards layout for mobile
+        const projectCards = document.querySelectorAll(".project-card");
+        projectCards.forEach((card) => {
+          card.style.minHeight = isMobile ? "auto" : "400px";
+        });
+
+        // Adjust hero slider content for mobile
+        const slideContents = document.querySelectorAll(".slide-content");
+        slideContents.forEach((content) => {
+          content.style.maxWidth = isMobile ? "90%" : "600px";
+          content.style.left = isMobile ? "5%" : "10%";
+        });
+      }
+
+      // Run on load and resize
+      window.addEventListener("load", handleResponsiveLayout);
+      window.addEventListener("resize", handleResponsiveLayout);
+
+      // Add navigation functionality for the slider arrows
+      document.addEventListener("DOMContentLoaded", function () {
+        const prevArrow = document.querySelector(".prev-arrow");
+        const nextArrow = document.querySelector(".next-arrow");
+
+        // Add event listeners to arrows
+        if (prevArrow) {
+          prevArrow.addEventListener("click", function () {
+            const newIndex = (currentSlide - 1 + slides.length) % slides.length;
+            goToSlide(newIndex);
+          });
+        }
+
+        if (nextArrow) {
+          nextArrow.addEventListener("click", function () {
+            const newIndex = (currentSlide + 1) % slides.length;
+            goToSlide(newIndex);
+          });
+        }
+      });
+
+      //clear contact me form when the user goes back
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName("form")) {
+          form.reset();
+        }
+      };
+
+      // Create a database of project information with flexible content
+      const projectsDatabase = {
+        // Tune-Up Tonic
+        1: {
+          title: "Tune-Up Tonic",
+          content: `
+            <div class="project-links">
+              <a href="https://thebirdbard.itch.io/tune-up-tonic" target="_blank" class="project-link-button">
+                <i class="fab fa-itch-io"></i> Play on Itch.io
+              </a>
+            </div>
+
+            <p>A Unity-made 3D puzzle game in which players must help Tonic, a tuning-fork toybot, restore the harmony of various out-of-tune music boxes. This game is available on Mac and Windows, and the Augmented Reality (AR) Tilt Five version will also soon be released with more customizable features, levels, and a final boss level.</p>
+
+            <div class="project-image-full">
+              <img src="project_assets/t-ut/TuneUpTonicPic1.PNG" alt="Tune-Up Tonic main screenshot">
+            </div>
+            
+            <p>These are the current features of the game:</p>
+            <ul>
+            <li>Music boxes with different walls/structures per level in the game</li>
+            <li>Tonic (the player) can...
+              <ul>
+                <li>walk/run</li>
+                <li>pick up notes/rest notes</li>
+                <li>deposit notes/rest notes into various instruments</li>
+                <li>talk to a frazzled conductor (tutorial character) in some of the music boxes.</li>
+              </ul>
+            </li>
+            <div class="project-image-single">
+              <img src="project_assets/t-ut/TUTDialogue.PNG" alt="Interacting with a frazzled conductor who is offering advice. There is a screen of dialogue below him.">
+            </div>
+            <li>Pitched music notes and rest notes. Both note types can be picked up and inserted into an instrument. 
+              <ul>
+                <li>When a pitched note is inserted, the note that was previously in the instrument is dropped outside of the instrument, 
+                and the new note that was deposited alters the instrument in some way, based on the type of instrument. But it will always change
+                the color of the instrument to match the color of the new note.</li>
+                <li>When a rest note is inserted, the instrument will disappear for a time
+                duration that is proportional to the rest note's indicated time duration. After that time period ends, the instrument appears again,
+                and the rest note respawns near the player.</li>
+              </ul>
+            </li>
+            <div class="project-image-grid-small2">
+              <img src="project_assets/t-ut/TUTPitch.PNG" alt="Tune-Up Tonic pitched musical note">
+              <img src="project_assets/t-ut/TUTRest.PNG" alt="Tune-Up Tonic rest note">
+            </div>
+            <li>A ballerina in every music box. Tonic must find a way to reach her to complete the music-box tuning process, ending the level.</li>
+            <li>A bear who can completely block entry to some closed area. He only leaves if he gets a raspberry to eat.</li>
+            <li>A frazzled conductor who offers Tonic advice on how to get used to a few of the new puzzle mechanics.</li>
+            <div class="project-image-grid3">
+              <img src="project_assets/t-ut/TUTBallerina.PNG" alt="Tune-Up Tonic ballerina">
+              <img src="project_assets/t-ut/TUTBearRaspberry.PNG" alt="Tune-Up Tonic bear eating a raspberry">
+              <img src="project_assets/t-ut/TUTTutorial.PNG" alt="Tune-Up Tonic frazzled conductor offering advice">
+            </div>
+            <li>These are the instruments in the game's music boxes and what they do:
+              <ul>
+                <li>Timpani: Launches a player up in the air. The higher the note's pitch, the higher up the player is launched.</li>
+                <li>Saxophone: Plays raspberries both figuratively and literally. Real raspberries are spit out and can be used to feed the bear. The higher the note's pitch, the higher the angle at which the saxophone is tilted upward.</li>
+                <li>Trombone: Has a long slide that can block an area or be walked on. The higher the note's pitch, the farther out the slide is pushed.</li>
+                <li>Harp: Can launch a player forward, against its strings. The higher the note's pitch, the more the harp is rotated around its y-axis.</li>
+              </ul>
+            </li>
+            <div class="project-image-grid4">
+              <img src="project_assets/t-ut/TUTTimpani.PNG" alt="Tune-Up Tonic timpani">
+              <img src="project_assets/t-ut/TUTSaxophone.PNG" alt="Tune-Up Tonic saxophone">
+              <img src="project_assets/t-ut/TUTTrombone.PNG" alt="Tune-Up Tonic trombone">
+              <img src="project_assets/t-ut/TUTHarp.PNG" alt="Tune-Up Tonic harp">
+            </div>
+            <li>A hidden US coin (penny, nickel, dime, or quarter) in each level that Tonic can collect by walking into one. The number of coins collected
+              by the end of the game can determine which of the end cards you will get.</li>
+            <li>3 end cards (a screen with visuals that shows after all levels are completed) that can show how much money a player has collected and which ending that grants them (no coins, a decent amount of coins, or all of the coins were collected).</li>
+            <li>Background music and sound effects for the title screen and level gameplay.</li>
+            <li>An in-game menu that lets you save (if a coin was collected at any played level), return to the title screen, resume the level, restart the level, change the volume of music or sound effects, pick a level from a list of levels.</li>
+            <li>A menu at the title screen that lets you start the game, see instructions on how to play, change the music or sound effects volume, view the game dev credits, or quit the game.</li>
+            <li>A level select screen where a player can choose a level to play. And each level button shows a coin icon if a coin has already been collected for that level. You can also load up a previously saved game on this screen.</li>
+            </ul>
+
+            <div class="project-image-single">
+              <img src="project_assets/t-ut/TUTLevelSelect.PNG" alt="Tune-Up Tonic Level Select screen">
+            </div>
+            
+            <p>This game was developed in collaboration with @snuffysam on itch.io. We both made this game for a game jam, and have since been working on perfecting it and adding new features for future releases.</p>
+            
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-list">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Tilt Five</span>
+              </div>
+            </div>
+          `,
+        },
+
+        // test
+
+        // Memory Mission Control
+        2: {
+          title: "Memory Mission Control",
+          content: `
+            <p>An online quiz game made for customizable self-assessment, developed using Phaser.io.</p>
+            
+            <div class="project-image-grid">
+              <img src="project_assets/memory_m-c/MMC1.PNG" alt="Memory Mission-Control interface">
+              <img src="project_assets/memory_m-c/MMC2.PNG" alt="Memory Mission-Control gameplay">
+            </div>
+            
+            <p>The platform allows students to assess themselves on any subject with customizable question-and-answer pairs,
+            presented in an engaging space-themed interface. Test.</p>
+            
+            <p>Features include progress tracking, customizable difficulty levels, and the ability to create personal question sets.</p>
+            
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-list">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Phaser.io</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+            </div>
+            
+            <div class="project-links">
+              <a href="https://esham3.github.io/Memory-MissionControl/" target="_blank" class="project-link-button">
+                <i class="fas fa-external-link-alt"></i> Visit Website
+              </a>
+            </div>
+          `,
+        },
+
+        // Temikki
+        3: {
+          title: "Temikki",
+          content: `
+            <div class="project-links">
+              <a href="https://www.temikki-garden.com/" target="_blank" class="project-link-button">
+                <i class="fas fa-external-link-alt"></i> Visit the official Temikki Garden website
+              </a>
+            </div>
+            
+            <p>An Android, Augmented Reality (AR) application made to support the emotional well-being of children who have long hospital stays.
+              The goal was to provide them with a fun escape that also helps them journal and track medical procedures.
+              Children can add to their gardens, helping them flourish with plants, animals, and dream lanterns.</p>
+
+            <div class="project-image-full">
+              <img src="project_assets/temikki/TemikkiAR2_crop.jpg" alt="AR view of the Temikki garden island. There are buttons to pan, rotate, reset rotation, or access the main menu.">
+            </div>
+
+            <p>During my time as the lead developer (among the project's student developers) for this project at VESL (used to be called the XR Studio) at the University of Miami, I created the following features during our first completed iteration of this application...</p>
+            
+            <p>There are two main game modes for this application: The AR view and the in-game view. In the AR view, I made sure the island can properly spawn and remain static in front of the player. I have also given the player the abilities to rotate, zoom, and enter the island at a certain rotation with an iris shot transition effect. As seen in the image below, the new iteration also includes the buttons "reset" and "pan."</p>
+
+            <div class="project-image-single">
+              <img src="project_assets/temikki/TemikkiAR1.jpg" alt="Another AR view of the Temikki garden island that is zoomed out a bit to see it placed on a table surface. There are buttons to pan, rotate, reset rotation, or access the main menu.">
+            </div>
+
+            <p>In the in-game view, I added controls for the user to pan across the island with a digital joystick, zoom in or out, rotate the island, go back to the AR screen with the same iris shot transition, or access some of the UI sequences (i.e. the UI sequence to build lanterns containing dreams, the plant shop UI sequence, and the check-in UI sequence). In the new iteration, the buttons to return to the AR view or enter any of the dream sequences have been consolidated into a "main menu" button. And the ability to pan can now be done by just swiping since there are added toggle buttons to switch between panning and rotation.</p>
+            
+            <div class="project-image-single">
+              <img src="project_assets/temikki/TemikkiInGameNoPlants.PNG" alt="in-game view of the Temikki garden island as a nearly blank slate (barely any plants have been planted yet). There are buttons indicating that you can pan across the island or rotate the island. You can also access the main menu.">
+            </div>
+
+            <p>I added a feature for the plants on the island to become yellow/dull if they have not been watered for a certain time duration. I also added the ability for a water pump to spray water particles that can revive yellowed plants in close proximity to the water pump, resetting the timer for those plants to become yellow again.</p>
+            
+            <div class="project-image-grid">
+              <img src="project_assets/temikki/TemikkiInGamePlants.PNG" alt="in-game view of the Temikki garden island populated with many plants. There are buttons indicating that you can pan across the island or rotate the island. You can also access the main menu.">
+              <img src="project_assets/temikki/TemikkiInGameWaterPump.PNG" alt="in-game view of the Temikki garden island at a top down view of a water pump spraying water among many plants. At the bottom, there are options to add plants, water the plants, or edit them with tools. There are also options to hop to different sections of the island (among four sections) or to access the main menu.">
+            </div>
+
+            <p>During the final quarter of this application's first iteration, I worked on some of the UI sequences from scratch. The sequence I primarily worked on was the Dream UI sequence.
+              It is a set of screens that allows a child using the application to create a lantern that will hold one of their dreams. In the first iteration, the Dream UI sequence
+              involved the user typing out a dream lantern title, choosing the lantern color, adding their dream message as a text input, and having the date of the
+              dream be automatically written for the lantern. There were a few other features that could not be fully fleshed out during the first iteration (adding
+              drawings, images, sound files, etc.). The lantern could later be found in a list of completed lanterns with the options of editing or deleting a selected
+              lantern.</p>
+              
+              <p>I was only able to accomplish most of this by hard-coding much of it. And the UI itself was transferred via a Unity Figma Bridge process that had many limitations for our purposes. There
+              was a lot of effort that went behind this first iteration of a UI sequence which was later able to take more shape in future iterations. I also
+              worked on some of the plant shop and check-in UI sequences during an electrifying time crunch. The newest iteration of the Dream UI sequence is pictured below.</p>
+
+            <div class="project-image-single">
+              <img src="project_assets/temikki/TemikkiDream2.PNG" alt="An image of the Dream UI sequence that shows fields for the user to enter their dream name in a text box, choose the dream topic from a dropdown, and choose the lantern color from a set of colors before progressing to the next screen.">
+            </div>
+
+            <p>In parallel with the Dream UI Sequence, I was also working on the backend portion for creating the actual dream lanterns. After the Dream
+              UI sequence is completed, Temikki, the flying orange creature on the island, would hang the completed lantern on a new branch of the Temikki
+              garden's central tree. For this process to work, I had to set up all positions at which a lantern could hang on the tree (there were about
+              30 that could be hanging at once). And whenever a lantern was created from the UI sequence, a proper lantern object needed to be created with
+              all the inputted data from the user to save that lantern and connect that specific lantern to its location on the tree. The lantern on the tree
+              also needed to match the selected lantern color. This required a lot of data-focused work in addition to the UI sequence.</p>
+
+            <p>We had another developer join the team to work on Temikki's behavior and animations. I had the responsibility of merging his changes to our main branch and making 
+              sure Temikki was dropping off the lantern near the correct spot on the tree once the UI sequence was done. This is what the lantern-hanging process looked like...</p>
+
+            <div class="project-image-grid">
+              <img src="project_assets/temikki/TemikkiLantern1.PNG" alt="An in-game close-up view of Temikki moving towards the tree while holding a glowing dream lantern.">
+              <img src="project_assets/temikki/TemikkiLantern2.PNG" alt="An in-game view of Temikki above the tree after dropping off the lantern. And the lantern is hung up on a branch below Temikki.">
+            </div>
+
+            <p>Additionally, I made a password slider system work, which was going to be used for the Login UI sequence. It was a certain type of password in which
+              users can choose a certain head, body, and set of feet for an animal as their password. There were 64 different password combinations that kids
+              could use and better remember this way. There is no picture for this in the new iteration as this feature had to get cut out to comply with proper
+              design standards. But this also needed to be hard coded, given a proper data-focused system, and transferred into Unity
+              using the Unity Figma Bridge like the other UI sequences I brought into the application for the first iteration.</p>
+
+
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-list">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">ARCore</span>
+                <span class="tech-tag">Unity Figma Bridge</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">Plastic SCM</span>
+              </div>
+            </div>
+          `,
+        },
+
+        // Stained Glass AR Opera
+        4: {
+          title: "Stained Glass AR Opera",
+          content: `
+          <p>An augmented reality experience bringing classical opera to life through innovative AR technology.</p>
+          <div class="project-image-full">
+            <img src="project_assets/sgaro/SGARO_main.PNG" alt="Stained Glass AR Opera">
+          </div>
+          <p>This project combines traditional art forms with modern technology to create an immersive musical experience.</p>
+          <div class="tech-stack">
+            <h3>Technologies Used</h3>
+            <div class="tech-list">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">AR Foundation</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Audio Processing</span>
+            </div>
+          </div>
+          `,
+        },
+
+        // Asthma Academy
+        5: {
+          title: "Asthma Academy",
+          content: `
+            <div class="project-links">
+              <a href="https://doi.org/10.1016/j.ecns.2023.101465" target="_blank" class="project-link-button">
+                <i class="fas fa-external-link-alt"></i> Visit the Asthma Academy Research Publication
+              </a>
+            </div>
+
+            <p>A Virtual Reality (VR) app designed to educate caregivers on how to manage a child’s
+              asthma attack. This app was developed on Unity and was made for the Magic Leap VR device.</p>
+            
+              <div class="project-image-full">
+              <img src="project_assets/aa/AA_zoomout.PNG" alt="Asthma Academy screenshot of a window giving a written-out scenario about a child's asthma attack, asking how you would manage it. You are given three answer choice buttons. This window is in a VR scene, and there is a beam of light shining onto the screen (coming from a player's VR remote).">
+            </div>
+            
+            <p>There is a limited number of available screenshots from this project, but it was essentially a point-and-click quiz that asked and tested the user with scenario-based questions about how they would react if their hypothetical child experienced certain symptoms of an asthma attack or any other asthma-related issues. This point-and-click quiz was paired with models of children experiencing the asthma attack. There are animations and sound effects implemented to make the situation feel more immersive, providing the user with a proper simulation of what a real episode could look like.</p>
+            
+            <p>There are about 4 to 5 questions the user would need to answer during the simulation. The quiz is timed and is keeping track of the correct answers chosen. For ease of use as a learning tool, the user also has the option to reset the simulation. At the end of the quiz, the picture below is the results card that would appear in front of the user. The idea is for the simulation to be used as a tool to practice and remember the actions that a caregiver would need to take if a child is experiencing asthma-related symptoms.</p>
+            
+            <div class="project-image-single">
+              <img src="project_assets/aa/AA_1.png" alt="An in-development Asthma Academy screenshot of the score screen you see when you complete the simulation's quiz. It shows the number of questions answered correctly out of the total, the time it took to complete the quiz, and a replay button.">
+            </div>
+
+            <p>I worked on this project with another developer. We split the workload by completing Jira task tickets with difficulty points alotted by our PM. We built the UI and quiz mechanics and used free assets for the models and sound effects. I used Autodesk Maya and Audacity to adjust some of the animations and audio. I also used Adobe XD and Figma to create the initial wireframes as shown below. This is a snapshot of the inital ideas for the app's quiz-flow and surroundings.</p>
+            
+            <div class="project-image-full">
+              <img src="project_assets/aa/AA_wireframes.PNG" alt="The Asthma Academy wireframes I designed during the initial design phase. They are all in Figma.">
+            </div>
+
+            <p>In addition to coding, adjusting assets, and creating the wireframes, I also assisted in the data collection for this study. I created an excel spreadsheet to help calculate and verify some of the statistical data. Our team collectively helped the PI carry out the study for this project, including the testing portion. The link to this study can be found at the top of this window.</p>
+            
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-list">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Magic Leap (VR device)</span>
+                <span class="tech-tag">Autodesk Maya</span>
+                <span class="tech-tag">Adobe XD</span>
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Audacity</span>
+                <span class="tech-tag">Plastic SCM</span>
+                <span class="tech-tag">Microsoft Excel</span>
+                <span class="tech-tag">Jira</span>
+              </div>
+            </div>
+          `,
+        },
+
+        // Minecraft Flower Quiz
+        8: {
+          title: "Minecraft Flower Quiz",
+          content: `
+            <div class="project-links">
+              <a href="https://esham3.github.io/minecraftFlowerQuiz/" target="_blank" class="project-link-button">
+                <i class="fas fa-external-link-alt"></i> Take Quiz
+              </a>
+            </div>
+            <p>An online personality quiz to determine which of 19 Minecraft flowers the player is most like. For those who don't know, Minecraft is a large sandbox game with many features that are used in grand player builds and various combat and survival experiences. Some of the items a player can use or interact with include these 19 flowers that grow in various areas within the game's map. This quiz's content is specific to Minecraft's Java edition, version 1.20.4.</p>
+            
+            <div class="project-image-grid">
+              <img src="project_assets/mcflower/mcflower1.PNG" alt="Minecraft Flower Quiz page">
+              <img src="project_assets/mcflower/mcflower2.PNG" alt="Minecraft Flower Quiz results screen">
+            </div>
+            <p>Each question has answer choices, and if you hover over them, they will play small animations that scale up the button size. When a button is clicked, the answer is decided, disabling all the answer buttons in that question. Once all questions are answered, a results card pops up at the bottom of the screen, and the window automatically jumps to that area. You can see your assigned flower, a description, and all of the flowers with the amount of points you scored for each of them at the bottom. If you click on the names for any of those flowers, the screen will change to show you the chosen flower and description. You can refresh the page to take the quiz again or to have any of your friends take it!</p>
+            
+            <p>There are seven questions that assess the quiz-taker's... </p>
+            <li>favorite color</li>
+            <li>conversational nature</li>
+            <li>desired hypothetical powers</li>
+            <li>desired location to spend time in</li>
+            <li>favorite animal</li>
+            <li>favorite trait in a person</li>
+            <li>favorite hobby</li>
+            <p>These questions correlate to various traits about Minecraft flowers:</p>
+            <li>effects on a player when used in Minecraft potions</li>
+            <li>color of flower</li>
+            <li>location/biome in which flower grows</li>
+            <li>animals that love eating this flower</li>
+            <p>I also connected answers to the results based on general hobby correlations with personality traits and color and flower symbolism in relation to personality. This quiz is fully made for the purpose of entertainment, but can still provide some light-hearted insight on a quiz-taker's personality.</p>
+            
+            
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-list">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+            </div>
+          `,
+        },
+      };
+    </script>
+  </body>
+</html>
