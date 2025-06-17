@@ -788,7 +788,7 @@ body::before {
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(224, 184, 124, 0.3);
+  /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(224, 184, 124, 0.3); */
   border: 1px solid rgba(201, 212, 232, 0.1);
   position: relative;
 }
@@ -802,8 +802,10 @@ body::before {
 /* Mobile view of resume */
 @media (max-width: 768px) {
   .resume-viewer {
-    height: 500px; /* Shorter height for mobile */
+    height: 1200px; /* Taller height for mobile to show more content */
     margin: 0 1rem;
+    transform: scale(0.9); /* Slightly zoomed out */
+    transform-origin: top center;
   }
 }
 
