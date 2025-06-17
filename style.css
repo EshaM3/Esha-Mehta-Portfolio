@@ -802,10 +802,11 @@ body::before {
 /* Mobile view of resume */
 @media (max-width: 768px) {
   .resume-viewer {
-    height: 1200px; /* Taller height for mobile to show more content */
+    display: none;
+    /* height: 800px;
     margin: 0 1rem;
-    transform: scale(0.9); /* Slightly zoomed out */
-    transform-origin: top center;
+    transform: scale(0.9);
+    transform-origin: top center; */
   }
 }
 
