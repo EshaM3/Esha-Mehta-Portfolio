@@ -1212,38 +1212,61 @@
           `,
         },
 
-        // test
-
         // Memory Mission Control
         2: {
           title: "Memory Mission Control",
           content: `
+
+          <div class="project-links">
+            <a href="https://esham3.github.io/Memory-MissionControl/" target="_blank" class="project-link-button">
+              <i class="fas fa-external-link-alt"></i> Play Quiz Game
+            </a>
+          </div>
+          
             <p>An online quiz game made for customizable self-assessment, developed using Phaser.io.</p>
+
+            <div class="project-image-single">
+              <img src="project_assets/memory_m-c/MMC6.PNG" alt="Memory Mission-Control title screen with a "Begin" button at the bottom.">
+            </div>
+
+            <p>The flow of this site can be described as a user submitting a form of question and answer pairs and playing a game that uses these pairs to help the user practice matching them. This game purely focuses on memory skill development. It can be used as a self-assessment tool for classes or independent learning, a practice quiz you could give to people you tutor or teach, or a fun memory game.</p>
+
+            <p>As seen below, the user is first given a form to fill out their question sets. I used a jQuery document ready handler to clone or remove form fields based on an increase or decrease in the user's inputted number of question sets. Once the pairs are filled out and the user has submitted the form, the game will pop up.</p>
             
             <div class="project-image-grid">
-              <img src="project_assets/memory_m-c/MMC1.PNG" alt="Memory Mission-Control interface">
-              <img src="project_assets/memory_m-c/MMC2.PNG" alt="Memory Mission-Control gameplay">
+              <img src="project_assets/memory_m-c/MMC_0.PNG" alt="Memory Mission-Control input form screen. There is a brief explanation about the quiz's purpose, and there is a question asking the user how many question sets they want with a number field. There is currently only one empty question/answer field underneath that question. Those fields have grey text indicating the character limits.">
+              <img src="project_assets/memory_m-c/MMC_1.PNG" alt="Memory Mission-Control input form screen with the question asking for the number sets's number field filled out as "6" and six question/answer pair fields underneath it.">
             </div>
             
-            <p>The platform allows students to assess themselves on any subject with customizable question-and-answer pairs,
-            presented in an engaging space-themed interface.</p>
-            
-            <p>Features include progress tracking, customizable difficulty levels, and the ability to create personal question sets.</p>
+            <p>These are the features of the gameplay that are visually shown in the images below the list:</p>
+            <li>The game will show a randomly-selected question with a flying rocket. There are planet destinations labeled with possible answers from your inputted list of answers. You must click on the correct answer for the rocket to be directed to the correct planet.</li>
+            <li>If you click the correct planet, the rocket will fly over to its location and land correctly. You will then earn points for that question, as shown by the Score counter on the bottom left of the screen.</li>
+            <li>If you click an incorrect planet, a red "X" will briefly appear over it, and the points that could've been earned for that question will be forfeited.</li>
+            <li>The question sets will be randomized and tested in groups of five or fewer.</li>
+            <li>If there are more than five total questions, the game will progress by clicking a 'next' arrow that shows after a set of five questions are completed.</li>
+            <li>There is a "New Game" button that will take you back to the input form with the questions from the game you were playing (in case you clicked this button by mistake or only wanted to make minor edits to the question sets).</li>
+            <li>There is a refresh button at the top right which will restart the game progress and re-randomize the questions, answers, and planet icons if clicked.</li>
+            <li>Once you have answered all the questions, you can progress to the "Game Over" screen, where the score will show as a percentage of correctly-answered questions.</li>
+            <li>The Game Over screen will have buttons for the player to play the same game again in a randomized order, go to the input form to make a new game, or quit to the title screen.</li>
+
+            <div class="project-image-grid">
+              <img src="project_assets/memory_m-c/MMC0.PNG" alt="Memory Mission-Control main game screen with five labeled planets, the game UI, the flying rocket in the middle, and the question at the top.">
+              <img src="project_assets/memory_m-c/MMC1.PNG" alt="Memory Mission-Control main game screen where the rocket is flying over to a planet on the right.">
+              <img src="project_assets/memory_m-c/MMC2.PNG" alt="Memory Mission-Control main game screen where an incorrectly-chosen planet has a red 'X' over it.">
+              <img src="project_assets/memory_m-c/MMC3.PNG" alt="Memory Mission-Control main game screen where a rocket has safely landed on a planet.">
+              <img src="project_assets/memory_m-c/MMC4.PNG" alt="Memory Mission-Control main game screen where there are no more planets, and a next arrow has appeared for the player to click on.">
+              <img src="project_assets/memory_m-c/MMC5.PNG" alt="Memory Mission-Control Game Over screen.">
+            </div>
             
             <div class="tech-stack">
               <h3>Technologies Used</h3>
               <div class="tech-list">
                 <span class="tech-tag">JavaScript</span>
                 <span class="tech-tag">Phaser.io</span>
+                <span class="tech-tag">jQuery (JS library)</span>
                 <span class="tech-tag">HTML5</span>
                 <span class="tech-tag">CSS3</span>
               </div>
-            </div>
-            
-            <div class="project-links">
-              <a href="https://esham3.github.io/Memory-MissionControl/" target="_blank" class="project-link-button">
-                <i class="fas fa-external-link-alt"></i> Visit Website
-              </a>
             </div>
           `,
         },
@@ -1365,7 +1388,7 @@
           content: `
             <div class="project-links">
               <a href="https://doi.org/10.1016/j.ecns.2023.101465" target="_blank" class="project-link-button">
-                <i class="fas fa-external-link-alt"></i> Visit the Asthma Academy Research Publication
+                <i class="fas fa-external-link-alt"></i> View the Asthma Academy research publication
               </a>
             </div>
 
