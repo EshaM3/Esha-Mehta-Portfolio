@@ -256,10 +256,12 @@
           />
           <div class="slide-content">
             <h2>Family Ties</h2>
-            <p>(Details will be added soon).</p>
-            <!-- <a href="javascript:void(0);" class="view-project-link"
+            <p>
+              A 2D platformer game about a spider rescuing her lost children.
+            </p>
+            <a href="javascript:void(0);" class="view-project-link"
               >View Project</a
-            > -->
+            >
           </div>
         </div>
         <div class="slide">
@@ -325,7 +327,7 @@
             <div class="card-content">
               <h3>Tune-Up Tonic</h3>
               <p>
-                A Unity puzzle game which takes place inside various out-of-tune
+                A 3D puzzle game which takes place inside various out-of-tune
                 music boxes.
               </p>
               <button class="view-details" data-project="1">
@@ -402,7 +404,7 @@
               </button>
             </div>
           </div>
-          <!-- <div class="project-card">
+          <div class="project-card">
             <div class="card-image">
               <img
                 src="project_assets/family_ties/FamilyTies0.PNG"
@@ -412,14 +414,13 @@
             <div class="card-content">
               <h3>Family Ties</h3>
               <p>
-                An interactive narrative experience exploring family
-                relationships and connections across generations.
+                A 2D platformer game about a spider rescuing her lost children.
               </p>
               <button class="view-details" data-project="6">
                 View Details
               </button>
             </div>
-          </div> -->
+          </div>
           <!-- <div class="project-card">
             <div class="card-image">
               <img
@@ -1130,7 +1131,7 @@
               </a>
             </div>
 
-            <p>A Unity-made 3D puzzle game in which players must help Tonic, a tuning-fork toybot, restore the harmony of various out-of-tune music boxes. This game is available on Mac and Windows, and the Augmented Reality (AR) Tilt Five version will also soon be released with more customizable features, levels, and a final boss level.</p>
+            <p>A 3D puzzle game in which players must help Tonic, a tuning-fork toybot, restore the harmony of various out-of-tune music boxes. This game is available on Mac and Windows, and the Augmented Reality (AR) Tilt Five version will also soon be released with more customizable features, levels, and a final boss level.</p>
 
             <div class="project-image-full">
               <img src="project_assets/t-ut/TuneUpTonicPic1.PNG" alt="Tune-Up Tonic main screenshot">
@@ -1373,10 +1374,10 @@
           <div class="tech-stack">
             <h3>Technologies Used</h3>
             <div class="tech-list">
-              <span class="tech-tag">Unity</span>
-              <span class="tech-tag">AR Foundation</span>
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">Audio Processing</span>
+              <span class="tech-tag">Meta Quest 3</span>
+              <span class="tech-tag">Magic Leap</span>
+              <span class="tech-tag">Figmin</span>
+              <span class="tech-tag">Sketchfab</span>
             </div>
           </div>
           `,
@@ -1428,6 +1429,59 @@
                 <span class="tech-tag">Plastic SCM</span>
                 <span class="tech-tag">Microsoft Excel</span>
                 <span class="tech-tag">Jira</span>
+              </div>
+            </div>
+          `,
+        },
+
+        // Family Ties
+        6: {
+          title: "Family Ties",
+          content: `
+            <div class="project-links">
+              <a href="https://thebirdbard.itch.io/family-ties" target="_blank" class="project-link-button">
+                <i class="fas fa-external-link-alt"></i> Play on Itch.io
+              </a>
+            </div>
+
+            <p>A 2D platformer game about a spider rescuing her lost children. The game is available to play on Mac and Windows devices.</p>
+            
+            <div class="project-image-single">
+              <img src="project_assets/family_ties/FamilyTiesTitle.PNG" alt="Family Ties title screen with 'Start,' 'Controls,' and 'Description' buttons.">
+            </div>
+            
+            <p>Using Unity, I co-developed this game with a small group for a game jam. Aside from basic game functions like the Title/Menu UI, walking/jumping movement, HP, enemy attacks, death, and scene-switching, another developer and I focused on two core functions: A web movement mechanic that works like a grapple-hook and an inventory system.</p>
+            
+            <p>I worked on the inventory system. Each time the spider walks into a collectable object (a key, peppermint candy, or rope), she collects it, and it shows up on the inventory bar at the top of the screen. If the player clicks on any of these items at an appropriate location (where the player can use said item), the item is expended from the inventory and causes an event to happen in the game.</p>
+            <li>If a key is used near the well, the scene changes to go to the underground portion of the level.</li>
+            <li>If a peppermint candy is used near an ant, the ant freezes and stops attacking for 8 seconds.</li>
+            <li>If the rope is used near the bucket that contains the spider's eggs at the end of the first level, the rope is used to connect to the bucket and rescue them, ending the game.</li>
+
+            <div class="project-image-grid-small2">
+              <img src="project_assets/family_ties/FTInventory1.PNG" alt="The spider is standing on the platfrom from which she has collected a peppermint candy. This is implied by the inventory bar at the top that has an icon of a peppermint candy and a square on the corner of the icon with a '1' label to indicate the number of candies collected.">
+              <img src="project_assets/family_ties/FTInventory2.PNG" alt="The spider is standing on a platform after collecting a key. The inventory bar at the top shows a key and a peppermint candy. There are labels on each item showing that one of each was collected. The spider is near a big well.">
+            </div>
+
+            <p>When the player clicks and holds on a grapple-friendly platform (indicated by a red-brown color), a web connects from the spider to that point, and the spider moves up towards the clicked-on point. The longer the web shot, the more force the spider will move as it swings. When the mouse click is released, the web shot disconnects. This is the mechanic that my fellow developer worked on.</p>
+            
+            <div class="project-image-single">
+              <img src="project_assets/family_ties/FamilyTies0.PNG" alt="The spider is swinging on a web shot that is connected to a red-brown-colored platform. There is an ant on the ground, next to a bed of spikes with a caution sign. The player has 6 health hearts, which is shown on the top left corner of the screen.">
+            </div>
+
+            <p>The premise of the game is to help navigate the spider to her eggs and fend off ants. The reason behind why her eggs are lost are up to interpretation, but I see it as the ants' revenge story. Spiders may not eat ants often due to the risk of group attacks, but they eat them nonetheless. The ants were fed up from being preyed on by spiders as a collective and decided to hide this poor spider mom's eggs. She needs to find a way underground to collect her spider children. She can feed the ants some candy during the journey to keep them distracted (she is more of a pacifist, so she does not eat or attack other ants).</p>
+
+            <p>This game only has one level, and it has an above-ground scene and an underground scene. As the player transitions to the underground scene, the spider loses the items she collected from the first scene. When she reaches her eggs, she needs a rope to pull up the hidden bucket that contains her eggs.</p>
+            
+            <div class="project-image-grid">
+              <img src="project_assets/family_ties/FTWorld2.PNG" alt="The spider is on a platform, in the underground part of the level. The surrounding walls are made of dirt. Her inventory has a piece of candy and a rope. There is an ant patrolling the ground.">
+              <img src="project_assets/family_ties/FTEnding.PNG" alt="In the underground part of the level, the rope is connected to the bucket through a slit in the middle of the dirt wall. The spider is riding on the rope. Ant is close by but now frozen. The game's screen says 'You have retrieved her eggs! The spider thanks you.' with an 'Exit' button below that text.">
+            </div>
+            
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-list">
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">C#</span>
               </div>
             </div>
           `,
